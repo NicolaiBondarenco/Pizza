@@ -1,0 +1,31 @@
+.root li {
+  display: inline-block;
+}
+
+.root li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 36px;
+  color: #fe5f1e;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid #fe5f1e;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.root li a:hover {
+  background-color: #fe5f1e;
+  color: #fff;
+}
+
+.root :global .selected a {
+  background-color: #fe5f1e;
+  color: #fff;
+}
+/*# sourceMappingURL=pagination.module.css.map */

@@ -29,9 +29,9 @@ const cartSlice = createSlice({
   reducers: {
     addItem(state, action: PayloadAction<CartItem>) {
       const findItem = state.items.find((obj) => obj.id === action.payload.id)
-      if (action.payload.size === 'традиционное') {
-        action.payload.price += 30
-      }
+      // if (action.payload.size === 'традиционное') {
+      //   action.payload.price += 30
+      // }
       if (findItem) {
         findItem.count++
       } else {
@@ -63,6 +63,22 @@ const cartSlice = createSlice({
     togglePopup(state, action) {
       state.open = action.payload
     },
+    // addAnotherItem(state, action) {
+    //   const findObj = state.items.find(
+    //     (obj) => obj.size === action.payload.size,
+    //   )
+    //   if (action.payload.size === 'традиционное') {
+    //     action.payload.price += 30
+    //   }
+    //   if (findObj) {
+    //     findObj.count++
+    //   } else {
+    //     state.items.push({
+    //       ...action.payload,
+    //       count: 1,
+    //     })
+    //   }
+    // },
   },
 })
 
@@ -76,6 +92,7 @@ export const {
   minusItem,
   clearItem,
   togglePopup,
+  // addAnotherItem,
 } = cartSlice.actions
 
 export default cartSlice.reducer

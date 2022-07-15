@@ -38,8 +38,8 @@ const CartItemBlock: React.FC<CartItemProps> = ({
 
   const onClickMinus = () => {
     dispatch(minusItem({ id } as CartItem))
-    items.map((item) => {
-      if (item.count - 1 === 0) {
+    items.find((item) => {
+      if (item.id === id && item.count - 1 === 0) {
         alert('Пицца будет удалена! Чтобы подтвердить действие нажмите "OK"')
         dispatch(removeItem(id))
       }
