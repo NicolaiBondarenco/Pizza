@@ -2,7 +2,7 @@ import React, { useState, useRef, useCallback } from 'react'
 
 import debounce from 'lodash.debounce'
 
-import { setSearchValue } from '../Redux/filterSlice'
+import { setSearchValue, selectFilter } from '../Redux/filterSlice'
 
 import styles from './search.module.scss'
 import icon from './2784260_business_finance_magnifier_money_search_icon.png'
@@ -12,8 +12,7 @@ const Search: React.FC = () => {
   const dispatch = useDispatch()
   const [colorSvg, setColorSvg] = useState('black')
   const inputRef = useRef<HTMLInputElement>(null)
-  // @ts-ignore
-  const inputValue = useSelector((state) => state.filter.inputValue)
+  const { inputValue } = useSelector(selectFilter)
 
   const testDebounce = useCallback(
     debounce((value) => {

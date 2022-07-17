@@ -22,6 +22,9 @@ body {
 
 .content {
   padding: 40px 0;
+  @media (max-width: 750px) {
+    padding: 10px 0;
+  }
 
   &__error {
     margin: 40px 0;
@@ -95,6 +98,9 @@ body {
     margin: 90px auto;
     .content__title {
       margin: 0;
+    }
+    @media (max-width: 950px) {
+      margin: 10px auto;
     }
     @media (max-width: 450px) {
       margin: 10px auto;
@@ -196,8 +202,8 @@ body {
         width: 80px;
         height: 80px;
         @media (max-width: 850px) {
-          width: 60px;
-          height: 60px;
+          width: 70px;
+          height: 70px;
         }
         @media (max-width: 800px) {
           width: 80px;
@@ -408,10 +414,19 @@ body {
     margin: 0 auto;
     width: 560px;
     text-align: center;
+    @media (max-width: 750px) {
+      width: 350px;
+    }
+    @media (max-width: 400px) {
+      width: 267px;
+    }
 
     h2 {
       font-size: 32px;
       margin-bottom: 10px;
+      @media (max-width: 750px) {
+        font-size: 26px;
+      }
     }
 
     p {
@@ -419,6 +434,9 @@ body {
       line-height: 145.4%;
       letter-spacing: 0.01em;
       color: #777777;
+      @media (max-width: 750px) {
+        font-size: 15px;
+      }
     }
 
     icon {
@@ -430,6 +448,12 @@ body {
       display: block;
       width: 300px;
       margin: 45px auto 60px;
+      @media (max-width: 750px) {
+        width: 195px;
+      }
+      @media (max-width: 400px) {
+        width: 150px;
+      }
     }
 
     .button--black {
