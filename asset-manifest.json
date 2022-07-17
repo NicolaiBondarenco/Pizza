@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Pizza/static/css/main.39b7721c.css",
+    "main.js": "/Pizza/static/js/main.3f480e4d.js",
+    "static/media/empty-cart.png": "/Pizza/static/media/empty-cart.db905d1f4b063162f25b.png",
+    "static/media/2784260_business_finance_magnifier_money_search_icon.png": "/Pizza/static/media/2784260_business_finance_magnifier_money_search_icon.de2a0177e3e2d62219a0.png",
+    "static/media/pizza-logo.svg": "/Pizza/static/media/pizza-logo.56ac87032d8f6fdf863326acd06c0d97.svg",
+    "index.html": "/Pizza/index.html",
+    "main.39b7721c.css.map": "/Pizza/static/css/main.39b7721c.css.map",
+    "main.3f480e4d.js.map": "/Pizza/static/js/main.3f480e4d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39b7721c.css",
+    "static/js/main.3f480e4d.js"
+  ]
+}
