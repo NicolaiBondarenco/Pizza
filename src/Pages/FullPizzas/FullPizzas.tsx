@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import style from './FullPizzas.module.scss'
 import axios from 'axios'
 
 const FullPizzas: React.FC = () => {
@@ -33,10 +34,17 @@ const FullPizzas: React.FC = () => {
   }
 
   return (
-    <div className="container">
-      <h2>{pizza.title}</h2>
-      <img src={pizza.imageUrl} alt="Pizza" />
-      <p>{pizza.price} ₽</p>
+    <div className={style.container}>
+      <img className={style.img} src={pizza.imageUrl} alt="Pizza" />
+      <div>
+        <h2 className={style.title}> - {pizza.title}</h2>
+        <p className={style.text}>
+          - {pizza.price} ₽ <span> (тонкое) </span>{' '}
+        </p>
+        <p className={style.text}>
+          - {pizza.price + 30} ₽ <span> (традиционное) </span>{' '}
+        </p>
+      </div>
     </div>
   )
 }
